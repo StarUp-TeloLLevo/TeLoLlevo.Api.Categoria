@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TeLoLlevo.Api.Categoria.Aplicacion;
 
 namespace TeLoLlevo.Api.Categoria.Controllers
 {
@@ -16,6 +17,12 @@ namespace TeLoLlevo.Api.Categoria.Controllers
         public CategoriasController(IMediator mediator)
         {
             _mediator = mediator;
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Unit>> Crear(Nuevo.Ejecuta data)
+        {
+            return await _mediator.Send(data);
         }
     }
 }

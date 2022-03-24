@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TeLoLlevo.Api.Categoria.Aplicacion;
 using TeLoLlevo.Api.Categoria.Persistencia;
 
 namespace TeLoLlevo.Api.Categoria
@@ -34,6 +36,7 @@ namespace TeLoLlevo.Api.Categoria
             {
                 options.UseMySQL(Configuration.GetConnectionString("DefaultConnection"));
             });
+            services.AddMediatR(typeof(Nuevo.Manejador).Assembly);
 
             services.AddSwaggerGen(c =>
             {
