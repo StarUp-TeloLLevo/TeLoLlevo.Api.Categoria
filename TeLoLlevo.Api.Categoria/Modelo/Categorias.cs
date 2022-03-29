@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace TeLoLlevo.Api.Categoria.Modelo
 {
+    // Clase de categoria
     public class Categorias
     {
         public Guid Id { get; set; }
