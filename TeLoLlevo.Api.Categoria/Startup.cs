@@ -50,11 +50,12 @@ namespace TeLoLlevo.Api.Categoria
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TeLoLlevo.Api.Categoria v1"));
+               
             }
 
-            app.UseHttpsRedirection();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TeLoLlevo.Api.Categoria v1"));
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
