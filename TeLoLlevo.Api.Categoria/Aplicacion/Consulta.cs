@@ -37,6 +37,12 @@ namespace TeLoLlevo.Api.Categoria.Aplicacion
                 _mapper = mapper;
             }
 
+            /// <summary>
+            /// Metodo manejador de la clase consulta
+            /// </summary>
+            /// <param name="request">recibe la peticion</param>
+            /// <param name="cancellationToken">un token de cancelacion</param>
+            /// <returns>retorna una tarea con una lita de categorias</returns>
             public async Task<List<CategoriasDto>> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
                 var categorias = await _contexto.Categorias.ToListAsync();
