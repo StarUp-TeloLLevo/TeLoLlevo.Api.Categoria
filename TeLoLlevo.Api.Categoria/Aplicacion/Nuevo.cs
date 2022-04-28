@@ -24,9 +24,11 @@ namespace TeLoLlevo.Api.Categoria.Aplicacion
         }
         public class Manejador : IRequestHandler<Ejecuta>
         {
+            //atributo de contexto con ef
             private readonly CategoriasContexto _contexto;
             public Manejador(CategoriasContexto contexto)
             {
+                //inyeccion de la clase de contexto
                 _contexto = contexto;
             }
 
