@@ -31,6 +31,7 @@ namespace TeLoLlevo.Api.Categoria.Aplicacion
             /// <param name="mapper">se inyecta la clase del mapeo</param>
             public Manejador(CategoriasContexto contexto, IMapper mapper)
             {
+                //inyeccion del contexto
                 _contexto = contexto;
                 _mapper = mapper;
             }
