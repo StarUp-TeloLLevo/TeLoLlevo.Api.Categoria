@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace TeLoLlevo.Api.Categoria.Dto
 {
+    /// <summary>
+    /// Configuracion de la clase Dto de categorias
+    /// </summary>
     public class CategoriasDto
     {
         public Guid Id { get; set; }
