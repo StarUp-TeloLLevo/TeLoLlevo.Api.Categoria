@@ -21,6 +21,11 @@ namespace TeLoLlevo.Api.Categoria.Aplicacion
         {
             private readonly CategoriasContexto _contexto;
             private readonly IMapper _mapper;
+            /// <summary>
+            /// se inyectan las dependencias dentro del constructor
+            /// </summary>
+            /// <param name="contexto">se inyecta la clase de contexto</param>
+            /// <param name="mapper">se inyecta la clase del mapeo</param>
             public Manejador(CategoriasContexto contexto, IMapper mapper)
             {
                 _contexto = contexto;
