@@ -8,6 +8,9 @@ using TeLoLlevo.Api.Categoria.Modelo;
 
 namespace TeLoLlevo.Api.Categoria.Mapper
 {
+    /// <summary>
+    /// Configuracion de la clase de mapeo  extendiendo su funcionalidad del profile
+    /// </summary>
     public class MappingProfile: Profile
     {
         public MappingProfile()
