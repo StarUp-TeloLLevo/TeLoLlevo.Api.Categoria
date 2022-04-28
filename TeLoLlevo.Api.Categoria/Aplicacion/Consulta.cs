@@ -33,6 +33,7 @@ namespace TeLoLlevo.Api.Categoria.Aplicacion
             {
                 //inyeccion del contexto
                 _contexto = contexto;
+                //inyeccion de la entidad de mapeo
                 _mapper = mapper;
             }
 
