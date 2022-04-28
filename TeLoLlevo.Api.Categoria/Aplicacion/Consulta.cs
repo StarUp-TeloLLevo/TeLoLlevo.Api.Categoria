@@ -18,7 +18,7 @@ namespace TeLoLlevo.Api.Categoria.Aplicacion
     public class Consulta
     {
         public class Ejecuta : IRequest<List<CategoriasDto>> { 
-
+            //no se reciben parametros
         }
         public class Manejador : IRequestHandler<Ejecuta, List<CategoriasDto>>
         {
