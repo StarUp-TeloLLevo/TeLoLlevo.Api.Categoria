@@ -38,6 +38,8 @@ namespace TeLoLlevo.Api.Categoria
             });
             services.AddMediatR(typeof(Nuevo.Manejador).Assembly);
 
+            services.AddAutoMapper(typeof(Consulta.Ejecuta));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TeLoLlevo.Api.Categoria", Version = "v1" });
