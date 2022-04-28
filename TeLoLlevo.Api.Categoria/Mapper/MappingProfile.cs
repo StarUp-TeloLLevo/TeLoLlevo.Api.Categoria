@@ -15,6 +15,7 @@ namespace TeLoLlevo.Api.Categoria.Mapper
     {
         public MappingProfile()
         {
+            //mapeo de la clase categorias a categoriaDto
             CreateMap<Categorias, CategoriasDto>().ReverseMap();
         }
     }
