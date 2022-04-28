@@ -57,7 +57,7 @@ namespace TeLoLlevo.Api.Categoria
             }
 
             
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
