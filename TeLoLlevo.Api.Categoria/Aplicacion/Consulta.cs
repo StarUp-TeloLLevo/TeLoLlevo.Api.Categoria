@@ -12,6 +12,9 @@ using TeLoLlevo.Api.Categoria.Persistencia;
 
 namespace TeLoLlevo.Api.Categoria.Aplicacion
 {
+    /// <summary>
+    /// clase que s eencarga de consultar un dato de un microservicio
+    /// </summary>
     public class Consulta
     {
         public class Ejecuta : IRequest<List<CategoriasDto>> { 
