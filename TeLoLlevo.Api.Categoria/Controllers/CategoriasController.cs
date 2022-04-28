@@ -23,6 +23,7 @@ namespace TeLoLlevo.Api.Categoria.Controllers
         [HttpPost]
         public async Task<ActionResult<Unit>> Crear(Nuevo.Ejecuta data)
         {
+            //metodo de insercion de data
             return await _mediator.Send(data);
         }
 
