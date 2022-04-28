@@ -14,6 +14,9 @@ namespace TeLoLlevo.Api.Categoria.Controllers
     [ApiController]
     public class CategoriasController : ControllerBase
     {
+        /// <summary>
+        /// se realiza la referencia del imediator dentro del controlador
+        /// </summary>
         private readonly IMediator _mediator;
         public CategoriasController(IMediator mediator)
         {
