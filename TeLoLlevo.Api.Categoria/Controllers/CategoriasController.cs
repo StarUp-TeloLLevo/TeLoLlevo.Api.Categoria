@@ -33,6 +33,7 @@ namespace TeLoLlevo.Api.Categoria.Controllers
         [HttpGet]
         public async Task<ActionResult<List<CategoriasDto>>> Consultar()
         {
+            ///regresamos un mediator como metodo async en su llamada a la clase consulta a traves del manejdor de la clase
             return await _mediator.Send( new Consulta.Ejecuta() );
         }
     }
