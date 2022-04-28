@@ -1,11 +1,13 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using TeLoLlevo.Api.Categoria.Dto;
+using TeLoLlevo.Api.Categoria.Modelo;
 using TeLoLlevo.Api.Categoria.Persistencia;
 
 namespace TeLoLlevo.Api.Categoria.Aplicacion
@@ -25,9 +27,12 @@ namespace TeLoLlevo.Api.Categoria.Aplicacion
                 _mapper = mapper;
             }
 
-            public Task<List<CategoriasDto>> Handle(Ejecuta request, CancellationToken cancellationToken)
+            public async Task<List<CategoriasDto>> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
-                
+                var categorias = await _contexto.Categorias.ToListAsync();
+                var  categoriasDto= _mapper.Map<List<Categorias>, List<CategoriasDto>>(categorias);
+                return categoriasDto;
+
             }
         }
     }
