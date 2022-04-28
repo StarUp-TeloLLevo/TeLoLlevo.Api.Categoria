@@ -9,8 +9,12 @@ using TeLoLlevo.Api.Categoria.Persistencia;
 
 namespace TeLoLlevo.Api.Categoria.Aplicacion
 {
+    /// <summary>
+    /// clase que s eecarga de insetar un nuevo elemento o entidad en el microservicio
+    /// </summary>
     public class Nuevo
     {
+
         public class Ejecuta: IRequest
         {
             public string Name { get; set; }
