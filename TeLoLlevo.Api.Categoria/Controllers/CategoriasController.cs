@@ -27,9 +27,9 @@ namespace TeLoLlevo.Api.Categoria.Controllers
         }
 
         /// <summary>
-        /// Este metodo se encarga de
+        /// Este metodo se encarga de generar el metodo de consultar dentro de un controlador
         /// </summary>
-        /// <returns></returns>
+        /// <returns>regresa una tarea o una lista de categorias</returns>
         [HttpGet]
         public async Task<ActionResult<List<CategoriasDto>>> Consultar()
         {
