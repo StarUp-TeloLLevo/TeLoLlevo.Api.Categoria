@@ -14,7 +14,9 @@ namespace TeLoLlevo.Api.Categoria.Aplicacion
     /// </summary>
     public class Nuevo
     {
-
+        /// <summary>
+        /// clase q se encarga de recibir  la peticion irequest
+        /// </summary>
         public class Ejecuta: IRequest
         {
             public string Name { get; set; }
